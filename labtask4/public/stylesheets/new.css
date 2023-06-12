@@ -1,0 +1,12 @@
+.column-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .column-form {
+    text-align: center;
+    padding-top: 100px;
+  }
+  .column-form button {
+    display: block;
+    margin: 10px auto;
+  }

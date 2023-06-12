@@ -1,0 +1,49 @@
+/* views/refrigerators/index.ejs */
+
+h1 {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 5px 10px;
+    border: none;
+    background-color: violet;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .unorder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  li img {
+    width: 100%;
+    height: auto;
+  }
+  
+  li h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  li p {
+    font-family: poppins;
+    font-size: 19px;
+    margin: 5px 0;
+  }
+  

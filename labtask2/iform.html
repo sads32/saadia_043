@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Validation Form</title>
+	<style>
+        body {
+	background-image: url('oven.jpg');
+
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	
+	padding: 20px;
+	border-radius: 10px;
+	margin: 200px auto;
+	max-width: 400px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	margin-top: 0;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 10px;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #3e8e41;
+}
+
+input.invalid {
+	border: 2px solid red;
+	animation: shake 0.5s;
+	animation-iteration-count: 3;
+}
+
+@keyframes shake {
+	0% { transform: translateX(0); }
+	20% { transform: translateX(-10px); }
+	40% { transform: translateX(10px); }
+	60% { transform: translateX(-10px); }
+	80% { transform: translateX(10px); }
+	100% { transform: translateX(0); }
+}
+
+    </style>
+    	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<form id="form" onsubmit="return validate()">
+			<h2>Login</h2>
+			<label for="email">Email:</label>
+			<input  type="email" id="email" name="email" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<button onclick="validate()" type="submit">Login</button>
+		</form>
+	</div>
+
+</body>
+</html>
